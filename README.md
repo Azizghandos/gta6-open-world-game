@@ -4,16 +4,37 @@
 [![rank](https://make.fun/badge/gta6-01/Azizghandos/gta6-open-world-game/rank.svg)](https://make.fun/bounty/gta6-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=gta6-01)
 [![reward](https://make.fun/badge/gta6-01/Azizghandos/gta6-open-world-game/reward.svg)](https://make.fun/bounty/gta6-01?utm_source=github&utm_medium=readme&utm_campaign=gta6-01)
 
-SOLMAR is a top-down 2D open-world crime game that runs entirely in a desktop browser from static files. You play Leo Costa, a driver fresh out of trouble in the coastal city of Solmar: steal cars, take taxi fares, dodge a five-star wanted system, and run six story missions for the fixer Rosa Delgado against Vince Marlow. The city is 3,200 × 3,200 pixels of streets, districts, a park, a beach and docks, alive with traffic, pedestrians and a day/night cycle. Combat, shops, hidden packages, a live minimap HUD and saving at the safehouse round it out. Every pixel is drawn on canvas and every sound is synthesised in WebAudio — no assets from any commercial game, no network needed.
+SOLMAR is a top-down 2D open-world crime game that runs entirely in the browser — no build step, no dependencies, no network. You play Leo Costa, a driver for hire in the coastal city of Solmar: a 3200×3200 world with 7 districts (Marina Bay, Old Town, Palm Heights, Portside, Downtown, Solmar Hills, South Beach), a day/night cycle, 26 traffic cars, 34 pedestrians, 9 car models, and a 5-star wanted system with police Interceptors that chase, ram, and try to bust you.
+
+Walk the streets or steal any car you find (press E), earn taxi fares, collect cash and 10 hidden packages worth $100 each, buy health and ammo at 3 shops, and fight with fists, pistol, or SMG (mouse aim, hold to fire). Six story missions from Leo Costa and Rosa Delgado take you from stealing your first wheels to reaching Vince Marlow's door in Solmar Hills — with a wanted level to shake off and two Interceptors to smash along the way. Progress autosaves to localStorage, so you can pick up where you left off.
 
 ## Run it
 
 ```sh
 node serve.ts
-# then open http://localhost:8080
 ```
 
-WASD or arrow keys to move, Shift to run, mouse to aim, click to shoot. E enters or exits a car, Space is the handbrake, 1/2/3 switch weapons, R reloads, T takes taxi jobs, M mutes, P or Esc pauses (S saves, Q quits to the title).
+Then open http://localhost:8080 in a desktop browser. Or open `game/index.html` directly — everything the game loads is a file under `game/`.
+
+### Controls
+
+- **WASD / arrow keys** — move / drive
+- **Mouse** — aim; hold left button to fire
+- **E** — steal a car / interact
+- **1 / 2 / 3** — fists / pistol / SMG
+- **P** — pause
+- **Space / Enter / click** — start
+
+### Missions
+
+1. First Wheels (Leo Costa) — steal any car
+2. The Pickup (Rosa Delgado) — collect a package in Marina Bay
+3. Hot Pursuit (Leo Costa) — shake a 2-star wanted level
+4. The Drop (Rosa Delgado) — carry the drop to Portside while the heat is on
+5. Turbulence (Leo Costa) — smash two Interceptors
+6. Kingpin's Fall (Rosa Delgado) — reach Vince Marlow's door in Solmar Hills
+
+Built by an AI agent for make.fun's "Make GTA 6" bounty, $1,666 in USDC.
 
 ---
 
